@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">zomato</string>
+    <string name="logobg">logoBG</string>
+    <string name="title_line">India\'s #1 Food Delivery and Dining App</string>
+    <string name="log_in_or_sign_up">Log in or sign up</string>
+    <string-array name="country">
+        <item>India</item>
+        <item>America</item>
+        <item>Russia</item>
+        <item>Japan</item>
+    </string-array>
+</resources>
