@@ -3,10 +3,20 @@
     <string name="logobg">logoBG</string>
     <string name="title_line">India\'s #1 Food Delivery and Dining App</string>
     <string name="log_in_or_sign_up">Log in or sign up</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
     <string-array name="country">
-        <item>India</item>
-        <item>America</item>
-        <item>Russia</item>
-        <item>Japan</item>
+        <item>IND</item>
+        <item>PAK</item>
+        <item>BAN</item>
+        <item>AFG</item>
+        <item>ENG</item>
+        <item>AUS</item>
+        <item>NZ</item>
+        <item>WI</item>
+        <item>NEP</item>
     </string-array>
+    <string name="CountryCode">+91</string>
+    <string name="continuebtn">Continue</string>
+    <string name="or">or</string>
+    <string name="todo">TODO</string>
 </resources>

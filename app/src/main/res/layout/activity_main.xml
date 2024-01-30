@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="295dp"
@@ -16,11 +18,16 @@
         android:scaleX="1.245"
         android:src="@drawable/logoinbg" />
 </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="15dp">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="10dp">
 
         <TextView
@@ -40,29 +47,118 @@
             android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_marginTop="15dp" />
-
-
     </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="20dp">
+        android:background="@drawable/country_input_bg"
+        android:elevation="10dp"
+            android:layout_marginEnd="5dp">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:textAlignment="center" />
+        </LinearLayout>
 
-            <AutoCompleteTextView
-                android:id="@+id/county"
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:elevation="15dp"
+            android:layout_marginStart="5dp">
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text=""
-                android:inputType="none"
-                android:gravity="center"/>
+                app:counterMaxLength="10"
+                app:counterEnabled="true"
+                android:layout_height="match_parent">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:background="@drawable/country_input_bg"
+                    android:textColorHint="@color/black"
+                    android:hint="@string/enter_phone_number" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:elevation="15dp"
+            android:background="@drawable/btnbg"
+            android:text="@string/continuebtn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="0.5in"
+            android:layout_height=".5in"
+            android:elevation="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/loginbg">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX=".4"
+            android:scaleY=".4"
+            android:src="@drawable/google"
+            android:contentDescription="@string/todo" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0.5in"
+            android:layout_height=".5in"
+            android:background="@drawable/loginbg"
+            android:elevation="25dp"
+            android:layout_marginStart="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/todo"
+                android:scaleX=".5"
+                android:scaleY=".5"
+                android:src="@drawable/facebook" />
+</LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
 </LinearLayout>
