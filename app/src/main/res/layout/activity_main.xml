@@ -124,6 +124,7 @@
                 android:layout_height="match_parent">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phoneNumber"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:maxLength="10"
@@ -142,6 +143,7 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/continueBtn"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
             android:textStyle="bold"
